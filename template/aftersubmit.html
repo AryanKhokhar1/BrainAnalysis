@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Home
+{% endblock title %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'aftersubmit.css' %}">
+{% endblock head %}
+{% block body %}
+<div class="heading1">
+    <h1>Brain Analyse</h1>
+</div>
+<div class="describe">
+    <p>Brain Analyse is made for to find your true tower Base on your thinking</p> 
+</div>
+<div class="done">
+    Your form is successfully sumitted!
+</div>
+<div class="predict">
+    <div class="predictdesc">
+        <ul>
+            <li>{{variable1}}</li>
+            <li>{{variable2}}</li>
+            <li>{{variable3}}</li>
+            <li>{{variable4}}</li>
+        </ul>
+    </div>
+</div>
+{% endblock body %}
+
+{% block footer %}
+<div class="status">
+    <div class="statusword">
+        <p>You can interact and give feedback to the developer personaly in that site</p>
+    </div>
+<div class="statusimg">
+    <div class="image">
+        <ul>
+            <span class="i1"><li><a href="https://www.instagram.com/aryan_khokhar07/" target="_blank"><img src="/static/img/instagram.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <span class="i1"><li><a href="https://www.linkedin.com/in/aryan-khokhar" target="_blank"><img src="/static/img/linkedin.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <span class="i1"><li><a href="https://www.twitter.com/AryanKh09703279" target="_blank"><img src="/static/img/twitter.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <!-- <span class="i1"><li><a href="#"><img src="/static/img/linkedin.png" alt=""></a></li></span> -->
+        </ul>
+    </div>
+</div>
+</div>
+{% endblock footer %}
+    

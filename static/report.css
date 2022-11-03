@@ -1,0 +1,69 @@
+body{
+    height: 100%;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 2px 0;
+}
+.heading{
+    color: blue;
+    text-align: center;
+    margin: 10px 0 8px 0;
+}
+.mainbox1{
+    display: flex;
+    justify-content: center;
+}
+.forminfo{
+    font-size: large;
+    font-family: 'Gill Sans';
+    margin: 5px 0 5px 0;
+    /* width: 80%; */
+}
+.submit{
+    margin: 15px 0 12px 0;
+    text-align: center;
+}
+.ireport{
+    height: 70px;
+}
+.button1{
+    color: white;
+    background-color: blue;
+    /* font-size: large; */
+    font-size: medium;
+    font-family: 'Gill Sans';
+    border-radius: 5px;
+    padding: 3px 5px 3px 5px;
+    border-color: blue;
+}
+.status{
+    position: fixed;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    color: white;
+    background-color: rgb(10, 35, 10);
+}
+.statusword{
+    margin: 6px 8px 5px 8px;
+    text-align: center;
+}
+.statusimg{
+    display: flex;
+    justify-content: center;
+}
+.image{
+    margin: 5px 0 5px 0;
+}
+.statusimg ul li{
+    list-style: none;
+    margin: 5px 0 5px 0;
+}
+.statusimg ul li a{
+    font-family: Verdana;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}

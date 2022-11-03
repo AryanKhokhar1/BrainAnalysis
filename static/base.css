@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* height: 1000px; */
+}
+body{
+    min-height: 100%;
+}
+.mainbox{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(10, 35, 10);
+}
+.imagebox{
+    display: flex;
+    justify-content: center;
+}
+.moto{
+    padding: 5px 0 3px 0;
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-family: serif;
+}
+.topbar{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    height: auto;
+    width: 70%;
+    margin-top: 1px;
+    background-color: rgb(10, 35, 10);
+}
+.info ul li{
+    display: inline;
+}
+.info ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 1px 8px 1px 5px;
+    font-size: large;
+    font-family: 'Gill Sans';
+}

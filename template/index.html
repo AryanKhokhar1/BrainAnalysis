@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Home
+{% endblock title %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock head %}
+{% block body %}
+<div class="top">
+    <h1>Brain Analyse</h1>
+</div>
+<div class="desc">
+    <p>Brain Analyse is made for to find your true power. Based on your thinking</p> 
+</div>
+<div id="alert">
+    <p>If you aren't in college just fill "nill"</p>
+</div>
+<div class="analyse">
+    <form method="post" action="/home">
+        {% csrf_token %}
+        <div class="aninfo" id="anrow1">
+            <label for="Name">Name*: </label><br>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="aninfo" id="anrow2">
+            <label for="College">College name: </label><br>
+            <input type="text" id="college" name="college" required>
+        </div>
+        <div class="aninfo" id="anrow3">
+            <label for="Branch">Branch: </label><br>
+            <input type="text" id="branch" name="branch" required>
+        </div>
+        <div class="aninfo" id="anrow4">
+            <label for="Phone number">Phone number*: </label><br>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="aninfo" id="anrow5">
+            <label for="Email">Email id*: </label><br>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <!-- <div class="allques"> -->
+            {% csrf_token %}
+        <div class="ques" id="ques1">
+            <p>1. If you had access to a time machine, would you rather travel to:</p>
+            <input class ="answer" type="radio" id="question1" name="question1" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/1/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question1" name="question1" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/1/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question1" name="question1" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/1/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question1" name="question1" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/1/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        <div class="ques" id="ques2">
+            <p>2. You feel happiest when you.</p>
+            <input class ="answer" type="radio" id="question2" name="question2" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/3/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question2" name="question2" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/3/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question2" name="question2" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/3/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question2" name="question2" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/3/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        <div class="ques" id="ques3">
+            <p>3. If you won unlimited access to.</p>
+            <input class ="answer" type="radio" id="question3" name="question3" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/5/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question3" name="question3" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/5/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question3" name="question3" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/5/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question3" name="question3" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/5/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        <div class="ques" id="ques4">
+            <p>4. Ideal Workout.</p>
+            <input class ="answer" type="radio" id="question4" name="question4" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/6/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question4" name="question4" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/6/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question4" name="question4" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/6/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question4" name="question4" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/6/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        <div class="ques" id="ques5">
+            <p>5. How much time do you spend on social media daily?</p>
+            <input class ="answer" type="radio" id="question5" name="question5" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/7/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question5" name="question5" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/7/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question5" name="question5" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/7/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question5" name="question5" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/7/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        <div class="ques" id="ques6">
+            <p>6. Image that's matches your mood.</p>
+            <input class ="answer" type="radio" id="question6" name="question6" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/9/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question6" name="question6" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/9/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question6" name="question6" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/9/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question6" name="question6" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/9/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        <div class="ques" id="ques7">
+            <p>7. Which colour is more beautiful?</p>
+            <input class ="answer" type="radio" id="question7" name="question7" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/10/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question7" name="question7" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/10/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question7" name="question7" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/10/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question7" name="question7" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/10/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        <div class="ques" id="ques8">
+            <p>8. Would you rather be?</p>
+            <input class ="answer" type="radio" id="question8" name="question8" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/14/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question8" name="question8" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/14/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question8" name="question8" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/14/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question8" name="question8" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/14/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        <div class="ques" id="ques9">
+            <p>9. Which would you pick?</p>
+            <input class ="answer" type="radio" id="question9" name="question9" value="1">
+            <label class ="labelinfo" for="1"><img src="/static/img/15/10.jpg" alt="" height="100px"></label>
+            <input class ="answer" type="radio" id="question9" name="question9" value='2'>
+            <label class ="labelinfo" for="2"><img src="/static/img/15/20.jpg" alt=""height="100px"></label><br>
+            <input class ="answer" type="radio" id="question9" name="question9" value='3'>
+            <label class ="labelinfo" for="3"><img src="/static/img/15/30.jpg" alt=""height="100px"></label>
+            <input class ="answer" type="radio" id="question9" name="question9" value='4'>
+            <label class ="labelinfo" for="4"><img src="/static/img/15/40.jpg" alt=""height="100px"></label><br>
+        </div>
+        
+        <div class="submit">
+            <Button class="button1" type="submit" >Submit</Button>
+        </div>
+    </form>
+</div>
+
+{% endblock body %}
+{% block footer %}
+<div class="status">
+    <div class="statusword">
+        <p>You can interact and give feedback to the developer personaly in these site</p>
+    </div>
+<div class="statusimg">
+    <div class="image">
+        <ul>
+            <span class="i1"><li><a href="https://www.instagram.com/aryan_khokhar07/" target="_blank"><img src="/static/img/instagram.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <span class="i1"><li><a href="https://www.linkedin.com/in/aryan-khokhar" target="_blank"><img src="/static/img/linkedin.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <span class="i1"><li><a href="https://www.twitter.com/AryanKh09703279" target="_blank"><img src="/static/img/twitter.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <!-- <span class="i1"><li><a href="#"><img src="/static/img/linkedin.png" alt=""></a></li></span> -->
+        </ul>
+    </div>
+</div>
+</div>
+{% endblock footer %}
+    

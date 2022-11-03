@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Report
+{% endblock title %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'report.css' %}">
+{% endblock head %}
+{% block body %}
+<!-- <div class="images">
+    <img src="https://source.unsplash.com/300x200/?error,website" alt="Images">
+</div> -->
+<div class="heading">
+    <h2>Report</h2>
+</div>
+<div class="mainbox1">
+    <form method="post" action="/report">
+        {% csrf_token %}
+        <div id="subbox1" class="forminfo">
+            <label for="Name">Name*: </label><br>
+            <input type="text" id="name" name="name"required>
+        </div>            
+        <div id="subbox2" class="forminfo">
+            <label for="College Name">College Name: </label><br>
+            <input type="text" id="college" name="college">
+        </div>
+        <div id="subbox3" class="forminfo">
+            <label for="Branch">Branch: </label><br>
+            <input type="text" id="branch" name="branch">
+        </div>
+        <div id="subbox4" class="forminfo">
+            <label for="Phone no">Phone Number*: </label><br>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div id="subbox5" class="forminfo">
+            <label for="Email">Email id*: </label><br>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div id="subbox6" class="forminfo">
+            <label for="Problem">Report*: </label><br>
+            <input class="ireport" type="text" id="problem" name="problem" required>
+        </div>
+        <div class="submit">
+        <Button class="button1" type="submit" >Submit</Button>
+        </div>
+    </form>
+</div>
+{% endblock body %}
+{% block footer %}
+<div class="status">
+    <div class="statusword">
+        <p>You can interact and give feedback to the developer personaly in that site</p>
+    </div>
+<div class="statusimg">
+    <div class="image">
+        <ul>
+            <span class="i1"><li><a href="https://www.instagram.com/aryan_khokhar07/" target="_blank"><img src="/static/img/instagram.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <span class="i1"><li><a href="https://www.linkedin.com/in/aryan-khokhar" target="_blank"><img src="/static/img/linkedin.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <span class="i1"><li><a href="https://www.twitter.com/AryanKh09703279" target="_blank"><img src="/static/img/twitter.png" alt="Aryan Khokhar" height="20px" >@Aryan_Khokhar</a></li></span>
+            <!-- <span class="i1"><li><a href="#"><img src="/static/img/linkedin.png" alt=""></a></li></span> -->
+        </ul>
+    </div>
+</div>
+</div>
+{% endblock footer %}
+    

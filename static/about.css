@@ -1,0 +1,58 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 6px 0;
+}
+.information{
+    text-align: center;
+    margin: 3px 5px 5px 5px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.devimg{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 6px 0;
+}
+.devname{
+    display: flex;
+    justify-content: center;
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+}
+.devyear{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.status{
+    position: relative;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    color: white;
+    background-color: rgb(10, 35, 10);
+}
+.statusword{
+    margin: 6px 8px 5px 8px;
+    text-align: center;
+}
+.statusimg{
+    display: flex;
+    justify-content: center;
+}
+.image{
+    margin: 5px 0 5px 0;
+}
+.statusimg ul li{
+    list-style: none;
+    margin: 5px 0 5px 0;
+}
+.statusimg ul li a{
+    font-family: Verdana;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}

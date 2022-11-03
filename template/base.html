@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="shortcut icon" href="/static/img/Brain Analyse-logos.jpeg" type="image/x-icon">
+    {% block head %}{% endblock head %}   
+</head>
+<body>
+    <header>
+        <div class="mainbox">
+            <div class="imagebox">
+                <img src="/static/img/Brain Analyse-logos.jpeg" alt="Brain Analysis" height="70px">
+            </div>
+            <div class="moto">
+                Find your true power
+            </div>
+        </div>
+        <div class="topbar">
+            <div class="info">
+                <ul>
+                    <li>
+                        <a href="/home">Analyse</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/report">Report</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>   
+    </header>
+    <main>
+        {% block body %}{% endblock body %}    
+    </main>
+    <footer> 
+        {% block footer %}    
+        {% endblock footer %}
+    </footer>
+</body>
+</html>

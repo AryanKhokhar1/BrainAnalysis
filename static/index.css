@@ -1,0 +1,83 @@
+body{
+    height:100%;
+}
+.top{
+    margin: 8px 0 5px 0;
+    text-align: center;
+    font-family: "Gill Sans";
+    color: rgb(43, 113, 226);
+}
+.desc{
+    text-align: center;
+    font-size: large;
+    font-family: "Gill Sans";
+}
+#alert{
+    text-align: center;
+    color: rgb(33, 15, 33);
+    margin: 8px 0 10px 0;
+}
+.analyse{
+    margin-top: 20px;
+    font-family: "Gill Sans";
+}
+.aninfo{
+    font-size: large;
+    margin: 2px 0 5px 10px;
+}
+.ques p{
+    padding: 8px 5px 2px 5px;
+    font-size: large;
+}
+.answer{
+    position: relative;
+    margin: 3px 4px 2px 5px;
+    font-size: large;
+    margin-bottom: 12px;
+    bottom: 40px;
+}
+.submit{
+    text-align: center;
+    margin: 5px 0 8px 0;
+}
+.button1{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 3px 5px 3px 5px;
+    border-color: blue;
+    /* font-size: larger; */
+
+}
+.labelinfo{
+    font-size: large;
+}
+.status{
+    position: relative;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    color: white;
+    background-color: rgb(10, 35, 10);
+}
+.statusword{
+    margin: 6px 8px 5px 8px;
+    text-align: center;
+}
+.statusimg{
+    display: flex;
+    justify-content: center;
+}
+.image{
+    margin: 5px 0 5px 0;
+}
+.statusimg ul li{
+    list-style: none;
+    margin: 5px 0 5px 0;
+}
+.statusimg ul li a{
+    font-family: Verdana;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
