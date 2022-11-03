@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y##)r#zqo&iqf)5efx@%_iqt+)#*xn9e_t9-*!u(2ugg)hz)hj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','brainanalysis.herokuapp.com']
 
 
 # Application definition
