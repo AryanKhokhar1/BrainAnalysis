@@ -18,8 +18,11 @@ def home(request):
         question7 = request.POST.get("question7")
         question8 = request.POST.get("question8")
         question9 = request.POST.get("question9")
-        # data = Analyse(name=name,college=college,branch=branch,phone=phone,email=email,question1 = question1,question2 = question2,question3 = question3,question4 = question4,question5 = question5,question6 = question6,question7 = question7,question8 = question8,question9 = question9,date = datetime.today())
-        # data.save()
+        data=Analyse(name=name,college=college,branch=branch,phone=phone,email=email,
+        question1=question1,question2 = question2,question3 = question3,question4 = 
+        question4,question5 = question5,question6 = question6,question7 = 
+        question7,question8 = question8,question9 = question9,date = datetime.today())
+        data.save()
         total = int(question1) + int(question2) + int(question3) + int(question4) + int(question5) + int(question6) + int(question7) + int(question8) + int(question9)
         total = total*10
         if(total <=140):
@@ -63,8 +66,9 @@ def report(request):
         phone= request.POST.get("phone")
         email= request.POST.get("email")
         problem= request.POST.get("problem")
-        # report = Report(name = name,college= college,branch= branch,phone = phone,email = email,problem = problem,date = datetime.today())
-        # report.save()
+        report = Report(name = name,college= college,branch= branch,phone = phone,email =   
+        email,problem = problem,date = datetime.today())
+        report.save()
         return render(request,"successful.html")
     else:
         return render(request,"report.html")
